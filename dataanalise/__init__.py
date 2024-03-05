@@ -21,4 +21,3 @@ def exibirmapacorrelacoes(data):
 def exibirgraficobarraseduc(dados):
     fig = px.bar(dados, x='municipio', y='somaedu')
     return fig
-
