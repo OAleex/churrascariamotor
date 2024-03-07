@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gráfico Aleatório</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Gráfico Aleatório</h1>
+    <div id="grafico">
+        <!-- O gráfico será renderizado aqui -->
+    </div>
+
+    <script>
+        // Função para gerar um gráfico aleatório
+        function gerarGraficoAleatorio() {
+            var data = [Math.random(), Math.random(), Math.random(), Math.random(), Math.random()];
+            var layout = {title: 'Gráfico Aleatório'};
+            Plotly.newPlot('grafico', [{x: [1, 2, 3, 4, 5], y: data, type: 'bar'}], layout);
+        }
+
+        // Chama a função para gerar o gráfico aleatório quando a página é carregada
+        window.onload = gerarGraficoAleatorio;
+    </script>
+</body>
+</html>
